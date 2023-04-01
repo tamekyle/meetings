@@ -3,24 +3,76 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>your.website.title</title>
+    <title>SNOCOA.A. - Meeting Finder</title>
   </head>
   <body>
     
-    <!--
+    <style>
+      #opening {
+        text-align: center;
+      }
 
-    If you are using a custom JSON feed instead of a Google Sheet, replace the data-src Google Sheet link with a link to your JSON feed and completely remove the data-google
-    
-    -->
+      #titleimg img {
+        margin-top:  20px;
+        margin-bottom: 20px;
+        max-width: 100%;
+      }
+
+      #top_links {
+        font-size: 1.15em;
+      }
+
+      #meetingguide {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #meetingguide_message {
+        font-size: 1.3em;
+        font-style: italic;
+      }
+
+      #meetingguide_message, #meetingguide_logo {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="opening">
+
+      <div id="titleimg">
+        <a href="https://www.snocoaa.org">
+          <img id="psaa_logo" src="psaalogo.jpeg" alt="SNOCOA.A.">
+        </a>
+      </div>
+
+      <div id="top_links">
+          <p>
+            <a href="https://www.snocoaa.org">SNOCOA.A. Home</a> - <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdbhCRPGQ7tb35fPjfQVW1l3_4n8QioSI5aJ3HgbmR8hQrOXg/viewform?usp=share_link">Meeting Update Form</a> - <a target="_blank" href="https://www.onlinedistrict25aa.org/online-groups/daily-meetings">Additional Western WA Online Meetings</a>
+          </p>
+      </div>
+
+      <div id="meetingguide">
+        <div id="meetingguide_message">
+          <p>You can also find our local meetings in the <a target="_blank" href="https://www.aa.org/pages/en_US/meeting-guide">Meeting Guide</a> app, the official meeting finder of A.A. World Services.</p>
+        </div>
+        <div id="meetingguide_logo">
+          <a target="_blank" href="https://www.aa.org/pages/en_US/meeting-guide"><img src="MeetingGuideLogo.png" alt="Meeting Guide Logo" /></a>
+        </div>
+      </div>
+   </div>
 
     <div
-      id="tsml-ui"
-      data-src="https://docs.google.com/spreadsheets/d/your.google.sheet.id/edit#gid=more.stuff.here"
-      data-google="your.google.api.key"
-      data-mapbox="pk.your.mapbox.access.token.goes.here"
-      data-timezone="America/Los_Angeles"
-    ></div>
-    <script src="https://tsml-ui.code4recovery.org/app.js" async></script>
+  id="tsml-ui"
+  data-src="https://sheets.code4recovery.org/storage/1UZVBgkxi0A670Zu4aS8pZ7CkymyjQkRVlS9O6AmwHJM.json"
+  data-mapbox="pk.eyJ1Ijoic25vY29hYXdlYiIsImEiOiJjbGZ5YnljZ2kwOXA1M3J0YWp1NGV4dzBpIn0.06ukfyuVWNk3BXrFtYyeLQ"
+  data-timezone="America/Los_Angeles"
+></div>
+<script src="https://tsml-ui.code4recovery.org/app.js" async></script>
 
   </body>
 </html>
+
